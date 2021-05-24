@@ -1,0 +1,20 @@
+//SHOWCASE (HERO) SECTION
+.btn {
+  display: inline-block;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  background: $color-primary;
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #fff;
+}
+//END OF SHOWCASE (HERO) SECTION

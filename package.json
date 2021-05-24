@@ -1,0 +1,27 @@
+{
+  "name": "webagency",
+  "version": "1.0.0",
+  "description": "Fort Lauderdale's #1 Web Agency",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "keywords": [
+    "website",
+    "html",
+    "web",
+    "development",
+    "web",
+    "design",
+    "website",
+    "design"
+  ],
+  "author": "Digital Footprint Solutions, Inc.",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

@@ -1,0 +1,73 @@
+//SHOWCASE (HERO) SECTION
+
+.showcase {
+  padding: 10rem 2rem;
+  height: 50rem;
+  background: url(../images/background-1.jpg);
+  position: relative;
+  // z-index: -5;
+
+  &__text {
+    color: white;
+
+    &--title {
+      font-size: 4.5rem;
+      letter-spacing: 0.2rem;
+      font-weight: 400;
+    }
+
+    &--subtitle {
+      font-size: 2rem;
+    }
+  }
+
+  &__form {
+    position: relative;
+    top: 5rem;
+    height: 40rem;
+    width: 40rem;
+    padding: 4rem;
+    z-index: 100;
+    justify-self: flex-end;
+  }
+}
+
+.showcase::before,
+.showcase::after {
+  content: "";
+  position: absolute;
+  height: 10rem;
+  bottom: -7rem;
+  right: 0;
+  left: 0;
+  background: #fff;
+  transform: skewY(-3deg);
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+}
+
+.showcase .grid {
+  grid-template-columns: 55% 30%;
+  overflow: visible;
+}
+
+.showcase__form .form-control {
+  margin: 3rem 0;
+
+  input[type="text"],
+  input[type="Email"],
+  input[type="Phone"] {
+    border: 0;
+    border-bottom: 1px solid #777;
+    width: 100%;
+    padding: 0.3rem;
+    font-size: 1.5rem;
+  }
+
+  input:focus {
+    outline: none;
+  }
+}
+
+//SHOWCASE (HERO) SECTION

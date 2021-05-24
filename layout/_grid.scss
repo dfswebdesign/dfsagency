@@ -1,0 +1,18 @@
+// 2 Column Grid
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20rem;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
