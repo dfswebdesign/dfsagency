@@ -172,6 +172,7 @@
 @media screen and (max-width: 1153px) {
   .seo .grid {
     grid-template-columns: 1fr;
+    gap: 20rem;
   }
 
   .seo__widget {
@@ -202,5 +203,24 @@
     }
   }
 }
-
 //END OF SEO SECTION
+
+// FEATURES SECTION
+
+@media screen and (max-width: 769px) {
+  // .features {
+  //   background-color: royalblue;
+  // }
+
+  .features .grid-2 {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+    overflow: visible;
+  }
+
+  .feature__img {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+// END OF FEATURES SECTION
