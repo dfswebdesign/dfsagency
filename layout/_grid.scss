@@ -34,3 +34,12 @@
   align-items: center;
   height: 100%;
 }
+
+.grid-container {
+  display: grid;
+  gap: 20px;
+}
+
+// .grid-4 {
+//   grid-template-columns: repeat(4, 1fr);
+// }
