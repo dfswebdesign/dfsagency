@@ -491,7 +491,8 @@ label {
     .headings__text--title {
       font-size: 3.5rem;
       letter-spacing: 0.2rem;
-      font-weight: 400; }
+      font-weight: 400;
+      padding: 0 1rem; }
     .headings__text--subtitle {
       font-size: 2rem;
       line-height: 1.2;
@@ -743,7 +744,7 @@ img {
     background-color: #008b8b; }
 
 .portfolio {
-  padding: 10rem 1rem;
+  padding: 10rem 2rem;
   position: relative; }
   .portfolio__text {
     color: #333; }
