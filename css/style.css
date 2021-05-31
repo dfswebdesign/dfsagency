@@ -827,7 +827,7 @@ footer {
   text-align: none; }
 
 #mc_embed_signup form {
-  text-align: left !important; }
+  padding: 0 !important; }
 
 i {
   margin-right: 1.4rem;
@@ -856,7 +856,8 @@ i {
 
 .social {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  border-top: 1px solid #fff; }
 
 .footer__social {
   display: flex;
