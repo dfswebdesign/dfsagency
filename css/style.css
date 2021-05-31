@@ -722,7 +722,9 @@ img {
 
 .service-details {
   padding: 5rem 35px;
-  background-color: #008b8b; }
+  background-color: #008b8b;
+  background: #06aaac;
+  position: relative; }
   .service-details img {
     width: 8rem;
     height: auto; }
@@ -733,7 +735,11 @@ img {
   background: #f6f6f6;
   border-radius: 2rem;
   -webkit-box-shadow: 5px 5px 21px -3px rgba(0, 0, 0, 0.56);
-  box-shadow: 5px 5px 21px -3px rgba(0, 0, 0, 0.56); }
+  box-shadow: 5px 5px 21px -3px rgba(0, 0, 0, 0.56);
+  transition: transform 0.3s ease-in-out;
+  outline-offset: 0.9rem; }
+  .service__card:hover {
+    transform: translateY(-1.5rem) scale(1.03); }
   .service__card p {
     font-size: 1.5rem;
     font-weight: 400; }
