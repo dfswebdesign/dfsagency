@@ -1,0 +1,72 @@
+footer {
+  padding: 3rem;
+  color: $color-white;
+  margin-top: 10rem;
+  background-color: $color-grey-text-dark;
+}
+
+// Form
+#mc_embed_signup {
+  background-color: $color-grey-text-dark;
+  clear: left;
+  font-size: 2.5rem;
+  width: 100%;
+  text-align: none;
+}
+
+#mc_embed_signup form {
+  text-align: left !important;
+}
+i {
+  margin-right: 1.4rem;
+  font-size: 1.9rem;
+}
+
+.footer__services {
+  height: 20rem;
+  width: 100%;
+  text-align: left;
+}
+
+.button {
+  font-size: 1.5rem !important;
+  background-color: $color-primary !important;
+  letter-spacing: 0.5rem !important;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  height: 4rem !important;
+  border-radius: 0.5rem !important;
+  margin-top: 1rem !important;
+}
+
+.service {
+  li {
+    margin-bottom: 1rem;
+  }
+}
+
+.email {
+  margin-top: 2rem;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__social {
+  display: flex;
+  padding-bottom: 5rem;
+  margin-left: 3rem;
+
+  i {
+    font-size: 3rem;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+  }
+
+  i:hover {
+    color: $color-secondary;
+    transform: scale(1.6);
+  }
+}

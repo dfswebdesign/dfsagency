@@ -1,5 +1,5 @@
-.features {
-  padding: 10rem 10rem;
+.portfolio {
+  padding: 10rem 3rem;
 
   position: relative;
   // z-index: -5;
@@ -24,7 +24,7 @@
     }
   }
 
-  .feature__img {
+  .portfolio__img {
     transform: rotateX(51deg) rotateZ(43deg);
     transform-style: preserve-3d;
     border-radius: 32px;
@@ -40,14 +40,15 @@
   }
 }
 
-.feature__rightside {
+.portfolio__rightside {
   p {
     font-weight: 400;
+    font-size: $default-font-size;
     // padding-right: 5rem;
   }
 }
 
-.features .grid-2 {
+.portfolio .grid-2 {
   overflow: visible;
   gap: 10rem;
 }
@@ -56,3 +57,49 @@
   color: $color-primary;
   font-weight: 600;
 }
+
+//Gallery
+
+.gallery-imgs {
+  display: flex;
+  flex-wrap: wrap;
+  // margin-left: -0.8rem;
+  padding: 0 5rem;
+}
+
+.gallery-img {
+  height: 20rem;
+  flex-grow: 1;
+  margin: 0 0 0.8rem 0.8rem;
+  // transition: transform 0.3s ease-in;
+  box-shadow: 0 1.5rem 4rem rbga($color-black, 0.5);
+  transition: transform 0.3s ease-in-out;
+  outline-offset: 0.9rem;
+}
+
+.gallery-img:hover {
+  // transform: scaleY(1.1);
+
+  transform: translateY(-1.5rem) scale(1.03);
+  outline: 0.5rem solid $color-secondary;
+}
+
+.gallery-img img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-img:nth-child(4n + 1) {
+  flex-basis: 25rem;
+}
+.gallery-img:nth-child(4n + 2) {
+  flex-basis: 32.5rem;
+}
+.gallery-img:nth-child(4n + 3) {
+  flex-basis: 18rem;
+}
+.gallery-img:nth-child(4n + 4) {
+  flex-basis: 38rem;
+}
+
+//End of Gallery

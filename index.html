@@ -6,14 +6,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
-  <meta name="description" content="We are Fort Lauderdale's # 1 Web Design Agency.  We create modern and responsive websites at an Affordable cost to our valued clients">
-  <meta name="keywords" content="HTML, CSS, JavaScript, web development, website building, website for my business, web design in fort lauderdale, Web Design in Fort Lauderdale, Affordable website company near me, build me a website">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="We are Fort Lauderdale's # 1 Web Design Agency.  We create modern and responsive websites at an Affordable cost to our valued clients">
+  <meta name="keywords"
+    content="HTML, CSS, JavaScript, web development, website building, website for my business, web design in fort lauderdale, Web Design in Fort Lauderdale, Affordable website company near me, build me a website">
   <meta name="author" content="Digital Footprint Solutions">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap" rel="stylesheet">
+
+  <!-- Lightbox -->
+  <link rel="stylesheet" href="css/lightbox.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="css/style.css" />
   <title>Web Design Agency in Fort Lauderdale | Digital Footprint Solutions</title>
@@ -23,7 +33,7 @@
 <body>
   <header class="main-header">
     <div class="logo">
-      <a href="#"><img src="images/DFS web agency logo_white.png" alt="" /></a>
+      <a href="index.html"><img src="/images/DFS web agency logo_white.png" alt="" /></a>
     </div>
 
     <input type="checkbox" class="menu-btn" id="menu-btn" />
@@ -35,17 +45,19 @@
       <li class="nav-link">
         <a href="#services">Services</a>
       </li>
+
       <li class="nav-link">
         <a href="#seo">SEO</a>
       </li>
       <li class="nav-link">
-        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
       </li>
       <li class="nav-link">
-        <a href="#">Porfolio</a>
+        <a href="about.html">About</a>
       </li>
+
       <li class="nav-link">
-        <a href="#">Contact</a>
+        <a href="contact.html">Contact</a>
       </li>
     </ul>
   </header>
@@ -97,6 +109,9 @@
           We've Helped Hundreds Of Small Businesses in The Fort Lauderdale and
           Surrounding Areas Get The Most Out Of Their Websites
         </h2>
+        <h3>Our web design approach is focused on customer satisfaction, user experience, and a creative approach that
+          showcases your company’s brand and continue to attract new customers.</h3>
+
       </div>
     </div>
 
@@ -182,7 +197,9 @@
 
         <p class="headings__text--title t-align"> <span class="bold">&#8212Grow Your</span> Online Visibility&#8212;</p>
 
-        <p class="headings__text--subtitle t-align">Search engine optimization (SEO) is necessary for a website to flourish. Many websites are not programmed to be easily read by search engines, like Google. As a result, they don’t show up the prominent pages of Google. </p>
+        <p class="headings__text--subtitle t-align">Search engine optimization (SEO) is necessary for a website to
+          flourish. Many websites are not programmed to be easily read by search engines, like Google. As a result, they
+          don’t show up the prominent pages of Google. </p>
       </div>
 
     </div>
@@ -197,36 +214,55 @@
 
       <div class="seo__widget">
 
-        <!-- semrush siteaudit widget -->
+        <form class="so-widget-form card" id="so1622176203"
+          action="https://www.websiteauditserver.com/process-embedded.inc" target="so-iframe" data-behaviour="new_tab"
+          data-title="Website Report for " data-touch="Thank you for requesting a report. We'll be in touch shortly!"
+          onsubmit="return soSubmit(this)">
 
-        <div id="ssa-widget"></div>
-        <script type="text/javascript">
-          ( function () {
-            var p = "https://www.semrush.com/leadgen/static/js/widget.min.js";
-            var d = document,
-              s = d.createElement( "script" );
-            s.src = p + "?v=" + Math.random();
-            ( d.head || d.body ).appendChild( s );
-            s.onload = function () {
-              new SEMRUSH.SiteauditWidget( {
-                widgetApiKey: "60a47ed9f856466d828ab993"
-              } );
-            }
-          } )();
-        </script>
-        <!-- End of semrush siteaudit widget -->
+          <div class="so-title t-align">Check The Health Of Your Website</div>
+          <input id="so-typeso1622176203" type="hidden" name="type" value="web">
+          <input type="hidden" name="uid" value="32727">
+          <input type="hidden" name="behaviour" value="new_tab">
+          <input type="hidden" name="template" value="0">
+
+
+          <div id="so-fieldswrapso1622176203">
+            <input type="text" name="domain" id="so-domainso1622176203" class="so-fieldso1622176203"
+              placeholder="Enter website" data-validation="Please enter a correct website domain">
+            <label for="website">Your domain name</label>
+            <input type="text" name="first_name" id="so-first-nameso1622176203" class="so-fieldso1622176203"
+              placeholder="Your First Name" data-validation="Please enter your First Name">
+            <label for="name">Your name goes here</label>
+            <input type="text" name="email" id="so-emailso1622176203" class="so-fieldso1622176203"
+              placeholder="Your e-mail" data-validation="Please enter a valid email address.">
+            <label for="email">We will send your report here</label>
+            <input type="text" name="phone" id="so-phoneso1622176203" class="so-fieldso1622176203"
+              placeholder="Your phone" data-validation="Please enter your phone">
+            <label for="phone">We'll contact you </label>
+            <input type="submit" id="so-submitso1622176203" value="Check">
+            <div><label id="so-consentso1622176203">
+                <input id="so-consent-valueso1622176203" name="consent" value="1" type="checkbox"
+                  data-validation="Please give your consent" />
+                <span>I agree to submit my email address, name and additional contact info to receive further
+                  updates</span>
+              </label>
+            </div>
+          </div>
+        </form>
+        <!-- End of widget -->
       </div>
     </div>
   </section>
+
   <!-- END OF SEO SECTION -->
 
   <!-- CTA Section -->
-  <section class="cta p-top-6" id="cta">
+  <section class="cta p-top-2 m-bottom-6" id="cta">
 
     <div class="container t-align">
       <h2>&#8212Great Websites That Engage & Convert
         More Visitors into Profitable Leads&#8212;</h2>
-        
+
       <h3>
         Custom Wordpress & Web Development Solutions starts from $899 USD
       </h3>
@@ -237,11 +273,11 @@
 
   <!-- Features Section -->
 
-  <section class="features" id="features">
-    <div class="features__text">
+  <section class="portfolio" id="portfolio">
+    <div class="portfolio__text">
 
       <div>
-        <p class="headings__text--title t-align"> <span class="bold">&#8212Mobile Design</span> Is Key&#8212</p>
+        <p class="headings__text--title t-align"> <span class="bold">&#8212Mobile Design</span> Portfolio&#8212</p>
 
         <p class="headings__text--subtitle t-align">A study conducted by Google says that 67% of people indicated they
           would more likely purchase a product or
@@ -250,9 +286,9 @@
 
     </div>
 
-    <div class=" fearure container grid-2 m-top-3">
+    <div class=" feature container grid-2 m-top-3">
 
-      <div class="feature__rightside">
+      <div class="portfolio__rightside">
         <h2>Fully Responsive Designs</h2>
         <p> More and more people are using mobile phones and tablets to browse the Web. comScore reports that in 2014
           the
@@ -268,41 +304,195 @@
           website’s customers!</p>
       </div>
 
-      <div class="feature__img">
-        <img src="images/Mobile-Friendly-Web-Design.jpg" alt="">
+      <div class="portfolio__img">
+        <img src="images/Mobile-Friendly-Web-Design.jpg" alt="portfolio image">
       </div>
     </div>
 
     <div class="grid-container t-align grid-4 m-top-3">
       <div class="about-text">
         <div class="feature-image">
-          <img src="images/mobile-design-2.jpg" alt="">
+          <img src="images/mobile-design-2.jpg" alt="portfolio image">
         </div>
       </div>
 
       <div class="feature-image">
-        <img src="images/mobile-design-3.jpg" alt="">
+        <img src="images/mobile-design-3.jpg" alt="portfolio image">
       </div>
 
       <div class="feature-image">
-        <img src="images/mobile-design-4.jpg" alt="">
+        <img src="images/mobile-design-4.jpg" alt="portfolio image">
       </div>
 
       <div class="feature-image">
-        <img src="images/mobile-design-5.jpg" alt="">
+        <img src="images/mobile-design-5.jpg" alt="portfolio image">
       </div>
-
     </div>
   </section>
 
+  <section class="porfolio-dtop m-top-3">
+    <div>
+      <p class="headings__text--title t-align"> <span class="bold">&#8212Desktop Design</span> Portfolio&#8212</p>
 
-  <div>
+      <p class="headings__text--subtitle t-align">As important as it is to ensure we have a responsive website, it is
+        equally important to ensure our desktop view is fully optimized and user-friendly, in regard to navigating the
+        site.</p>
+    </div>
+
+    <div class="gallery-imgs m-top-3 ">
+
+      <div class="gallery-img card">
+
+        <a href="https://fudgeshop.com/">
+          <img src="images/fudge shop.png" alt="fudge shop">
+        </a>
+
+      </div>
+
+      <div class="gallery-img card">
+        <a href="https://www.mamamiacuisine.com/">
+          <img src="images/mama mia.png" alt="mama mia">
+        </a>
+      </div>
+
+      <div class="gallery-img card">
+        <a href="http://perrywindle.com/">
+          <img src="images/perry h law.png" alt="perry h law">
+        </a>
+      </div>
+
+      <div class="gallery-img card">
+        <a href="https://www.mybeautyredefined.com/">
+          <img src="images/beauty redefined.png" alt="beauty redefined">
+        </a>
+      </div>
+
+      <div class="gallery-img card">
+        <a href="https://jmjconstructionservices.com/">
+          <img src="images/jmj construction.png" alt="jmj construction">
+        </a>
+      </div>
+
+      <div class="gallery-img card">
+        <a href="https://broyles.photography/">
+          <img src="images/Michael-Broyles-Photography.jpg" alt="fudge shop">
+        </a>
+      </div>
+
+      <div class="gallery-img card">
+        <a href="https://www.packagemanager.net/">
+          <img src="images/package manager.png" alt="package manager">
+        </a>
+      </div>
+
+      <div class="gallery-img card">
+        <a href="https://www.jayellranch.com/">
+          <img src="images/Jayell-Ranch.jpg" alt="fudge shop">
+        </a>
+      </div>
+
+      <div class="gallery-img card">
+        <a href="https://tngominis.com/">
+          <img src="images/Go-Minis-510x382.jpg" alt="fudge shop">
+        </a>
+      </div>
+
+      <div class="gallery-img card">
+        <a href="https://www.jimford.realtor/">
+          <img src="images/Jim-Ford-Realtor.jpg" alt="jim ford">
+        </a>
+      </div>
+
+      <div class="gallery-img card">
+        <a href="https://richardsprintinginc.com/">
+          <img src="images/Richards-Printing-Services.jpg" alt="richards printing service">
+        </a>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="grid-3">
+          <div class="footer__services service m-bottom-3">
+            <h2>Our Services</h2>
+            <div class="footer__list-item">
+              <ul>
+                <li><i class="fas fa-paint-brush"></i><a href="#">Web Design</a></li>
+                <li><i class="fas fa-search-location"></i><a href="#">SEO</a></li>
+                <li><i class="fas fa-store"></i><a href="#">eCommerce</a></li>
+                <li><i class="fas fa-code"></i><a href="#">Web Development</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer__services m-bottom-3">
+            <h2>Join Our Newsletter</h2>
+            <p>Stay up to date on industry news and receive promotions & special offers.</p>
+            <!-- Begin Mailchimp Signup Form -->
+            <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+
+            <div id="mc_embed_signup">
+              <form
+                action="https://digitalfootprintsolutions.us1.list-manage.com/subscribe/post?u=09b3ab997777d10f128759f3d&amp;id=ea3c898dbf"
+                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+
+                  <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address"
+                    required>
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                      name="b_09b3ab997777d10f128759f3d_ea3c898dbf" tabindex="-1" value=""></div>
+                  <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+                      class="button"></div>
+                </div>
+              </form>
+            </div>
+
+            <!--End mc_embed_signup-->
+          </div>
+
+          <div class="footer__services m-bottom-3">
+            <h2>Get In Touch</h2>
+            <h3><strong>Digital Footprint Solutions.Inc.</strong></h3>
+            <p>Fort Lauderdale, Florida</p>
+            <p>Tel: 954-639-2380</p>
+            <p>Toll Free: 1-800-839-7549</p>
+          </div>          
+        </div>
+
+        <div class="social">
+          <p> &#8212 Follow us on social media &#8212</p>
+        <div class="footer__social">
+          <div class="footer__icons">
+            <i class="fab fa-facebook"></i>
+          </div>
+
+          <div class="footer__icons">
+            <i class="fab fa-linkedin"></i>
+          </div>
+
+          <div class="footer__icons">
+            <i class="fab fa-instagram-square"></i>
+          </div>
+
+          <div class="footer__icons">
+            <i class="fab fa-youtube-square"></i>
+          </div>
+        </div>
+
+        <div class="copyright">
+         <p> &copy; Digital Footprint Solutions, Inc.  All Rights Reserved</p>
+        </div>
+        </div>
+        
+      </div>
+      
+    </footer>
 
 
-  </div>
-  </section>
-
-  <script src="js/app.js"></script>
+    <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
