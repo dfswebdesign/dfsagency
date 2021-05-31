@@ -486,9 +486,22 @@ label {
         text-align: center; } }
 
 @media screen and (max-width: 769px) {
+  .headings__text {
+    color: #333; }
+    .headings__text--title {
+      font-size: 3.5rem;
+      letter-spacing: 0.2rem;
+      font-weight: 400; }
+    .headings__text--subtitle {
+      font-size: 2rem;
+      line-height: 1.2;
+      font-weight: 400;
+      max-width: 70%;
+      margin: 0 auto; }
+    .headings__text--subtitle {
+      font-weight: 400; }
   .cta h2 {
-    font-size: 3rem;
-    background-color: skyblue; }
+    font-size: 3.5rem; }
   .portfolio .grid-2 {
     grid-template-columns: 1fr;
     gap: 5rem;
@@ -730,7 +743,7 @@ img {
     background-color: #008b8b; }
 
 .portfolio {
-  padding: 10rem 3rem;
+  padding: 10rem 1rem;
   position: relative; }
   .portfolio__text {
     color: #333; }
