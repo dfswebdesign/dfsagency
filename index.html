@@ -13,6 +13,67 @@
     content="HTML, CSS, JavaScript, web development, website building, website for my business, web design in fort lauderdale, Web Design in Fort Lauderdale, Affordable website company near me, build me a website">
   <meta name="author" content="Digital Footprint Solutions">
 
+  <!-- Google Analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S660XNJZK8" defer></script>
+
+  <script defer>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push( arguments );
+    }
+    gtag( 'js', new Date() );
+
+    gtag( 'config', 'G-S660XNJZK8' );
+  </script>
+
+  <script type="text/javascript" defer>
+    function add_chatapi() {
+      var hccid = 96933697;
+      var nt = document.createElement( "script" );
+      nt.async = true;
+      nt.src = "https://www.mylivechat.com/chatapi.aspx?hccid=" + hccid;
+      var ct = document.getElementsByTagName( "script" )[ 0 ];
+      ct.parentNode.insertBefore( nt, ct );
+    }
+    add_chatapi();
+  </script>
+
+  <!-- Google Adsense  -->
+
+  <script data-ad-client="ca-pub-5139664363918449" async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
+  <!-- Facebook Pixel Code -->
+  <script defer>
+    ! function ( f, b, e, v, n, t, s ) {
+      if ( f.fbq ) return;
+      n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply( n, arguments ) : n.queue.push( arguments )
+      };
+      if ( !f._fbq ) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement( e );
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName( e )[ 0 ];
+      s.parentNode.insertBefore( t, s )
+    }( window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js' );
+    fbq( 'init', '161686449297108' );
+    fbq( 'track', 'PageView' );
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=161686449297108&ev=PageView&noscript=1" /></noscript>
+  <!-- End Facebook Pixel Code -->
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap" rel="stylesheet">
@@ -20,23 +81,56 @@
   <!-- Lightbox -->
   <link rel="stylesheet" href="css/lightbox.css">
 
+  <!-- favicon -->
+  <link rel="icon" href="images/favicon.jpg" sizes="16x16" type="image/png">
+
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <!--CSS Stylesheet  -->
   <link rel="stylesheet" href="css/style.css" />
   <title>Web Design Agency in Fort Lauderdale | Digital Footprint Solutions</title>
 
-   <!-- AOS Animate -->
-   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- AOS Animate -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
 <body>
+  <!-- Messenger Chat Plugin Code -->
+  <div id="fb-root"></div>
+
+  <!-- Your Chat Plugin code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
+
+  <script>
+    var chatbox = document.getElementById( 'fb-customer-chat' );
+    chatbox.setAttribute( "page_id", "111482834456103" );
+    chatbox.setAttribute( "attribution", "page_inbox" );
+    window.fbAsyncInit = function () {
+      FB.init( {
+        xfbml: true,
+        version: 'v10.0'
+      } );
+    };
+
+    ( function ( d, s, id ) {
+      var js, fjs = d.getElementsByTagName( s )[ 0 ];
+      if ( d.getElementById( id ) ) return;
+      js = d.createElement( s );
+      js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore( js, fjs );
+    }( document, 'script', 'facebook-jssdk' ) );
+  </script>
+  <!-- End of Fb Chat Script -->
+
   <header class="main-header">
     <div class="logo">
-      <a href="index.html"><img src="images/DFS web agency logo_white.png" alt="logo" /></a>
+      <a href="index.html"><img src="images/DFS web agency logo_white_1.png" alt="logo" /></a>
     </div>
 
     <input type="checkbox" class="menu-btn" id="menu-btn" />
@@ -44,7 +138,7 @@
       <span class="menu-icon__line"></span>
     </label>
 
-    <ul class="nav-links">
+    <ul class="nav-links" id="nav">
       <li class="nav-link">
         <a href="#services">Services</a>
       </li>
@@ -55,13 +149,13 @@
       <li class="nav-link">
         <a href="#portfolio">Portfolio</a>
       </li>
-      <li class="nav-link">
+      <!-- <li class="nav-link">
         <a href="about.html">About</a>
       </li>
 
       <li class="nav-link">
         <a href="contact.html">Contact</a>
-      </li>
+      </li> -->
     </ul>
   </header>
 
@@ -70,18 +164,19 @@
   <section class="showcase">
     <div class="container grid">
       <div class="showcase__text">
-        <p class="showcase__text--title" data-aos="fade-up">Grow Your Brand</p>
+        <p class="showcase__text--title" data-aos="fade-up">Take Your Business Online</p>
         <p class="showcase__text--subtitle" data-aos="fade-up">
-          Start Working With A Web Design Agency That Can Offers Everything
-          You Need To Provide The Online Presence Your Company Needs To GROW.
+          Do you need a <strong>Professional Web Design Agency</strong> that can offer digital presence to your
+          business? We can help in providing the online presence you need to grow.
         </p>
-        <a href="#" class="btn btn-outline" data-aos="fade-up" data-aos-delay="600">Let's Get Started</a>
+        <a href="#services" class="btn btn-outline m-top-5" data-aos="fade-up" data-aos-delay="600">Let's Get
+          Started</a>
       </div>
 
       <!-- Right Grid -->
       <div class="showcase__form card" data-aos="zoom-in-up" data-aos-delay="1000">
         <h3>Request A Quote</h3>
-        <form>
+        <form action="https://formspree.io/f/myylwdwl" method="POST">
           <div class="form-control">
             <input type="text" name="name" placeholder="Name" required />
           </div>
@@ -105,7 +200,7 @@
   <section class="services" id="services">
     <div class="container m-top-1 t-align m-bottom-3">
 
-      <div  data-aos="zoom-left" data-aos-delay="2000">
+      <div data-aos="zoom-left" data-aos-delay="800">
         <h1 class="headings__text--title t-align"> <span class="bold">&#8212Fort Lauderdale's </span>Web Design
           Agency&#8212</h1>
         <h2>
@@ -113,7 +208,8 @@
           Surrounding Areas Get The Most Out Of Their Websites
         </h2>
         <h3>Our web design approach is focused on customer satisfaction, user experience, and a creative approach that
-          showcases your company’s brand and continue to attract new customers.</h3>
+          showcases your company’s brand and continue to attract new customers. Below are our flagship services provided
+          to our clients</h3>
 
       </div>
     </div>
@@ -132,7 +228,7 @@
         <div class="service__card--text">
           <p>Websites we build for our clients are modern, attractive and designed responsively. This means your website
             fits all screen sizes..</p>
-          <a href="#" class="btn m-top-5">Learn more</a>
+          <!-- <a href="#" class="btn m-top-5">Learn more</a> -->
         </div>
 
       </div>
@@ -149,7 +245,7 @@
         <div class="service__card--text">
           <p>SEO is Search Engine Optimization. This is necessary for websites to to flourish, which in turn, increase
             revenue for your business.</p>
-          <a href="#" class="btn m-top-5">Learn more</a>
+          <!-- <a href="#" class="btn m-top-5">Learn more</a> -->
         </div>
 
       </div>
@@ -166,7 +262,7 @@
         <div class="service__card--text">
           <p>A flexible eCommerce platform, providing seamless integration with your website. Get your store online
             today! <br><br></p>
-          <a href="#" class="btn m-top-5">Learn more</a>
+          <!-- <a href="#" class="btn m-top-5">Learn more</a> -->
         </div>
 
       </div>
@@ -183,7 +279,7 @@
         <div class="service__card--text">
           <p>We build websites and applications using the latest technologies that works hard, achieve results, and
             generate a ROI. <br><br></p>
-          <a href="#" class="btn m-top-5">Learn more</a>
+          <!-- <a href="#" class="btn m-top-5">Learn more</a> -->
         </div>
 
       </div>
@@ -340,7 +436,8 @@
       <p class="headings__text--subtitle t-align">As important as it is to ensure we have a responsive website, it is
         equally important to ensure our desktop view is fully optimized and user-friendly, in regard to navigating the
         site.</p>
-        <p class="headings__text--subtitle t-align m-top-4">Check out a few of our past projects by clicking the image below.</p>
+      <p class="headings__text--subtitle t-align m-top-4">Check out a few of our past projects by clicking the image
+        below.</p>
     </div>
 
     <div class="gallery-imgs m-top-3 ">
@@ -348,32 +445,32 @@
       <div class="gallery-img card">
 
         <a href="https://fudgeshop.com/">
-          <img src="images/fudge shop.png" alt="fudge shop">
+          <img src="images/fudge shop.jpg" alt="fudge shop">
         </a>
 
       </div>
 
       <div class="gallery-img card">
         <a href="https://www.mamamiacuisine.com/">
-          <img src="images/mama mia.png" alt="mama mia">
+          <img src="images/mama mia.jpg" alt="mama mia">
         </a>
       </div>
 
       <div class="gallery-img card">
         <a href="http://perrywindle.com/">
-          <img src="images/perry h law.png" alt="perry h law">
+          <img src="images/perry h law.jpg" alt="perry h law">
         </a>
       </div>
 
       <div class="gallery-img card">
         <a href="https://www.mybeautyredefined.com/">
-          <img src="images/beauty redefined.png" alt="beauty redefined">
+          <img src="images/beauty redefined.jpg" alt="beauty redefined">
         </a>
       </div>
 
       <div class="gallery-img card">
         <a href="https://jmjconstructionservices.com/">
-          <img src="images/jmj construction.png" alt="jmj construction">
+          <img src="images/jmj construction.jpg" alt="jmj construction">
         </a>
       </div>
 
@@ -385,7 +482,7 @@
 
       <div class="gallery-img card">
         <a href="https://www.packagemanager.net/">
-          <img src="images/package manager.png" alt="package manager">
+          <img src="images/package manager.jpg" alt="package manager">
         </a>
       </div>
 
@@ -434,7 +531,7 @@
             <p>Stay up to date on industry news and receive promotions & special offers.</p>
             <!-- Begin Mailchimp Signup Form -->
             <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-           
+
             <div id="mc_embed_signup">
               <form
                 action="https://digitalfootprintsolutions.us1.list-manage.com/subscribe/post?u=09b3ab997777d10f128759f3d&amp;id=ea3c898dbf"
@@ -476,7 +573,7 @@
 
           <div class="footer__services m-bottom-3">
             <h2>Get In Touch</h2>
-            <h3><strong>Digital Footprint Solutions.Inc.</strong></h3>
+            <h3><strong>Digital Footprint Solutions. Inc.</strong></h3>
             <p>Fort Lauderdale, Florida</p>
             <p>Tel: 954-639-2380</p>
             <p>Toll Free: 1-800-839-7549</p>
@@ -484,36 +581,51 @@
         </div>
 
         <div class="social">
-          
+
           <div class="copyright">
             <p> &copy; Digital Footprint Solutions, Inc. All Rights Reserved</p>
           </div>
           <div class="footer__social">
             <div class="footer__icons">
               <p>Follow us on social media</p>
-              <a href="https://www.facebook.com/Web-Design-Agency-111482834456103" target="_blank"><i class="fab fa-facebook"></i></a> 
+              <a href="https://www.facebook.com/Web-Design-Agency-111482834456103" target="_blank"><i
+                  class="fab fa-facebook"></i></a>
               <a href="https://www.linkedin.com/in/ray-daley/" target="_blank"><i class="fab fa-linkedin"></i></a>
               <a href="https://www.instagram.com/dfsagency/"><i class="fab fa-instagram-square"></i></a>
-              <a href="https://www.youtube.com/channel/UCFTjEV6MY3wsXF2N4ujJ72g" target="_blank"><i class="fab fa-youtube-square"></i></a>
-            </div>         
+              <a href="https://www.youtube.com/channel/UCFTjEV6MY3wsXF2N4ujJ72g" target="_blank"><i
+                  class="fab fa-youtube-square"></i></a>
+            </div>
+          </div>
+
         </div>
 
-      </div>
-
     </footer>
+
+    <!--Add the following script at the bottom of the web page (before </body></html>)-->
+    <script type="text/javascript">
+      function add_chatapi() {
+        var hccid = 96933697;
+        var nt = document.createElement( "script" );
+        nt.async = true;
+        nt.src = "https://www.mylivechat.com/chatapi.aspx?hccid=" + hccid;
+        var ct = document.getElementsByTagName( "script" )[ 0 ];
+        ct.parentNode.insertBefore( nt, ct );
+      }
+      add_chatapi();
+    </script>
 
     <!--AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({
+      AOS.init( {
 
-            delay: 200, // values from 0 to 3000, with step 50ms
-            duration: 1500, // values from 0 to 3000, with step 50ms
+        delay: 200, // values from 0 to 3000, with step 50ms
+        duration: 1500, // values from 0 to 3000, with step 50ms
 
-            once: false, // whether animation should happen only once - while scrolling down
-            mirror: false, // whether elements should animate out while scrolling past them
-        });
-        </script>
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+      } );
+    </script>
     <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
     <script src="js/app.js"></script>
 </body>

@@ -1,0 +1,27 @@
+.submittion {
+  //   padding: 10rem 2rem;
+  height: 100vh;
+  background: url(../images/background-3.jpg);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // z-index: -5;
+
+  &__text {
+    color: white;
+    height: auto;
+
+    margin-top: 10rem;
+
+    &--title {
+      font-size: 3rem;
+      letter-spacing: 0.2rem;
+      font-weight: 400;
+    }
+
+    &--subtitle {
+      font-size: 2rem;
+    }
+  }
+}

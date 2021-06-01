@@ -10,9 +10,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// seo form
-
-//testing seotimizer
+//seotimizer
 
 function soSubmit(el) {
   if (!soFormValidate(el.id)) {
@@ -195,3 +193,13 @@ function closeSoModal() {
     soOverlay.style.display = "none";
   }, 300);
 }
+
+//Remove menu on Click
+const navButton = document.getElementById("menu-btn");
+const navLinks = document.querySelectorAll(".nav-link");
+
+Array.from(navLinks).forEach((link) =>
+  link.addEventListener("click", () => {
+    navButton.checked = false;
+  })
+);
