@@ -39,3 +39,12 @@
   display: grid;
   gap: 2rem;
 }
+
+// Web Design Section
+
+.grid-col {
+  display: grid;
+  grid-template-columns: 60% 30%;
+  gap: 3rem;
+  overflow: visible;
+}

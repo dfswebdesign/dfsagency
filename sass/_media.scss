@@ -125,6 +125,32 @@
       }
     }
   }
+
+  .showcase-web-design {
+    padding-top: 30rem 0.5rem;
+    height: auto;
+
+    &__form {
+      // top: 5rem;
+      height: auto;
+      width: 100%;
+      // padding: 4rem;
+      z-index: 100;
+      margin-top: -15rem;
+    }
+
+    &__text {
+      margin-top: 10rem;
+
+      &--title {
+        font-size: 3.5rem;
+      }
+
+      &--subtitle {
+        font-size: 1.6rem;
+      }
+    }
+  }
 }
 
 //END OF SHOWCASE (HERO) SECTION
@@ -153,6 +179,18 @@
   .grid-4 {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+
+  // Web Design Page
+
+  .grid-col {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .right-col {
+    padding: 0 1.5rem;
+    margin: 0 auto;
   }
 }
 
@@ -233,6 +271,15 @@
     }
   }
 
+  //Web Design Page
+  .left-main {
+    padding: 0 0.5rem;
+    p {
+      font-weight: 400;
+      font-size: 1.6rem;
+    }
+  }
+
   .cta {
     h2 {
       font-size: 3.5rem;
@@ -276,7 +323,5 @@
       font-size: 0.5rem;
     }
   }
-
-  // Submittion Page
 }
 // END OF FEATURES SECTION

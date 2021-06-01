@@ -34,6 +34,12 @@
   display: grid;
   gap: 2rem; }
 
+.grid-col {
+  display: grid;
+  grid-template-columns: 60% 30%;
+  gap: 3rem;
+  overflow: visible; }
+
 .card {
   background: #fff;
   border-radius: 1rem;
@@ -206,6 +212,57 @@ label {
   -webkit-transform: skewY(-3deg);
   -moz-transform: skewY(-3deg);
   -ms-transform: skewY(-3deg); }
+
+.web-design-container {
+  max-width: 135rem;
+  margin: 0 auto;
+  padding: 0 4rem; }
+
+.showcase-web-design {
+  padding: 10rem 2rem;
+  height: 55rem;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url(../images/productivity-1995786_1920.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .showcase-web-design__text {
+    color: white;
+    text-align: center; }
+    .showcase-web-design__text--title {
+      font-size: 4.5rem;
+      letter-spacing: 0.2rem;
+      font-weight: 400; }
+    .showcase-web-design__text--subtitle {
+      font-size: 3.5rem;
+      text-align: center; }
+  .showcase-web-design__form {
+    height: 40rem;
+    width: 40rem;
+    padding: 4rem;
+    z-index: 100;
+    justify-self: flex-end; }
+
+.left-main {
+  padding: 0 3rem; }
+  .left-main p {
+    font-weight: 400;
+    font-size: 1.6rem; }
+  .left-main img {
+    width: 100%; }
+
+.right-col p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.6rem; }
+
+.right-col iframe {
+  width: 100%; }
+
+.banner__fiverr img, .banner__hostgator img {
+  width: 100%;
+  height: auto; }
 
 .showcase {
   padding: 10rem 2rem;
@@ -439,6 +496,20 @@ label {
       .showcase__text--title {
         font-size: 3.5rem; }
       .showcase__text--subtitle {
+        font-size: 1.6rem; }
+  .showcase-web-design {
+    padding-top: 30rem 0.5rem;
+    height: auto; }
+    .showcase-web-design__form {
+      height: auto;
+      width: 100%;
+      z-index: 100;
+      margin-top: -15rem; }
+    .showcase-web-design__text {
+      margin-top: 10rem; }
+      .showcase-web-design__text--title {
+        font-size: 3.5rem; }
+      .showcase-web-design__text--subtitle {
         font-size: 1.6rem; } }
 
 @media screen and (max-width: 1485px) {
@@ -454,7 +525,13 @@ label {
     font-size: 2rem; }
   .grid-4 {
     grid-template-columns: 1fr;
-    gap: 2rem; } }
+    gap: 2rem; }
+  .grid-col {
+    grid-template-columns: 1fr;
+    gap: 2rem; }
+  .right-col {
+    padding: 0 1.5rem;
+    margin: 0 auto; } }
 
 .service__card {
   padding: 5rem;
@@ -501,6 +578,11 @@ label {
       margin: 0 auto; }
     .headings__text--subtitle {
       font-weight: 400; }
+  .left-main {
+    padding: 0 0.5rem; }
+    .left-main p {
+      font-weight: 400;
+      font-size: 1.6rem; }
   .cta h2 {
     font-size: 3.5rem; }
   .portfolio .grid-2 {
