@@ -44,8 +44,7 @@
   background: #fff;
   border-radius: 1rem;
   box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
-  padding: 2rem;
-  margin: 1rem;
+  padding: 1rem;
   color: #333; }
 
 .btn {
@@ -216,7 +215,7 @@ label {
 .web-design-container {
   max-width: 135rem;
   margin: 0 auto;
-  padding: 0 4rem; }
+  padding: 0 2.5rem; }
 
 .showcase-web-design {
   padding: 10rem 2rem;
@@ -263,6 +262,61 @@ label {
 .banner__fiverr img, .banner__hostgator img {
   width: 100%;
   height: auto; }
+
+.web-design-container {
+  max-width: 135rem;
+  margin: 0 auto;
+  padding: 0 2.5rem; }
+
+.showcase-web-design {
+  padding: 10rem 2rem;
+  height: 55rem;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url(/images/background-3.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .showcase-web-design__text {
+    color: white;
+    text-align: center; }
+    .showcase-web-design__text--title {
+      font-size: 4.5rem;
+      letter-spacing: 0.2rem;
+      font-weight: 400; }
+    .showcase-web-design__text--subtitle {
+      font-size: 3.5rem;
+      text-align: center; }
+  .showcase-web-design__form {
+    height: 40rem;
+    width: 40rem;
+    padding: 4rem;
+    z-index: 100;
+    justify-self: flex-end; }
+
+.left-main {
+  padding: 0 3rem; }
+  .left-main p {
+    font-weight: 400;
+    font-size: 1.6rem; }
+  .left-main img {
+    width: 100%; }
+
+.right-col p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.6rem; }
+
+.banner__fiverr img, .banner__hostgator img {
+  width: 100%;
+  height: auto; }
+
+.left-side img {
+  width: 50%; }
+
+.left-side {
+  border-bottom: 1px solid #333;
+  padding-bottom: 3rem; }
 
 .showcase {
   padding: 10rem 2rem;
@@ -698,7 +752,7 @@ body {
   max-width: 120rem;
   margin: 0 auto;
   overflow: auto;
-  padding: 0 4rem; }
+  padding: 0 2rem; }
 
 .ul {
   list-style-type: none; }
@@ -888,7 +942,7 @@ img {
 .gallery-imgs {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 5rem; }
+  padding: 0 2rem; }
 
 .gallery-img {
   height: 20rem;
