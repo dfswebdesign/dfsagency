@@ -220,7 +220,7 @@ label {
 .showcase-web-design {
   padding: 10rem 2rem;
   height: 55rem;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url(../images/productivity-1995786_1920.jpg);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url(/images/productivity-1995786_1920.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -268,7 +268,7 @@ label {
   margin: 0 auto;
   padding: 0 2.5rem; }
 
-.showcase-web-design {
+.showcase-search-engine {
   padding: 10rem 2rem;
   height: 55rem;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url(/images/background-3.jpg);
@@ -277,17 +277,17 @@ label {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .showcase-web-design__text {
+  .showcase-search-engine__text {
     color: white;
     text-align: center; }
-    .showcase-web-design__text--title {
+    .showcase-search-engine__text--title {
       font-size: 4.5rem;
       letter-spacing: 0.2rem;
       font-weight: 400; }
-    .showcase-web-design__text--subtitle {
+    .showcase-search-engine__text--subtitle {
       font-size: 3.5rem;
       text-align: center; }
-  .showcase-web-design__form {
+  .showcase-search-engine__form {
     height: 40rem;
     width: 40rem;
     padding: 4rem;
