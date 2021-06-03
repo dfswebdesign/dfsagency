@@ -7,14 +7,58 @@
   color: #fff;
   border: none;
   border-radius: 1rem;
+  position: relative;
+  transition: all;
+  overflow: hidden;
+  border-bottom: 2px solid $color-secondary;
 
-  &:hover {
-    transform: scale(1.02);
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $color-secondary;
+    z-index: -1;
+    transform: translateX(-100%);
+    transition: all 0.3s;
+  }
+
+  &:hover:before {
+    transform: translateX(0);
+    // transform: scale(1.02);
   }
 }
 
-.btn-outline {
-  background: transparent;
-  border: 1px solid #fff;
+.btn-1 {
+  display: inline-block;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  background: $color-secondary;
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+  position: relative;
+  transition: all;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $color-primary;
+    z-index: -1;
+    transform: translateX(-100%);
+    transition: all 0.3s;
+  }
+
+  &:hover:before {
+    transform: translateX(0);
+  }
 }
+
 //END OF SHOWCASE (HERO) SECTION

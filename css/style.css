@@ -54,13 +54,49 @@
   background: #ff5925;
   color: #fff;
   border: none;
-  border-radius: 1rem; }
-  .btn:hover {
-    transform: scale(1.02); }
+  border-radius: 1rem;
+  position: relative;
+  transition: all;
+  overflow: hidden;
+  border-bottom: 2px solid #06aaac; }
+  .btn:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #06aaac;
+    z-index: -1;
+    transform: translateX(-100%);
+    transition: all 0.3s; }
+  .btn:hover:before {
+    transform: translateX(0); }
 
-.btn-outline {
-  background: transparent;
-  border: 1px solid #fff; }
+.btn-1 {
+  display: inline-block;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  background: #06aaac;
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+  position: relative;
+  transition: all;
+  overflow: hidden; }
+  .btn-1:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #ff5925;
+    z-index: -1;
+    transform: translateX(-100%);
+    transition: all 0.3s; }
+  .btn-1:hover:before {
+    transform: translateX(0); }
 
 .seo {
   background: #f6f6f6;
@@ -315,6 +351,29 @@ label {
 
 .left-side img {
   width: 100%; }
+
+.ecommerce-container {
+  max-width: 135rem;
+  margin: 0 auto;
+  padding: 0 2.5rem; }
+
+.showcase-ecommerce {
+  padding: 10rem 2rem;
+  height: 60rem;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url(../images/ecommerce-1.jpg);
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 100% 100%, 50% 93%, 0 100%, 0% 70%, 0% 35%, 0 0); }
+
+.ecommerce-images img {
+  display: block;
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem; }
 
 .showcase {
   padding: 10rem 2rem;
@@ -889,8 +948,6 @@ img {
   box-shadow: 5px 5px 21px -3px rgba(0, 0, 0, 0.56);
   transition: transform 0.3s ease-in-out;
   outline-offset: 0.9rem; }
-  .service__card:hover {
-    transform: translateY(-1.5rem) scale(1.03); }
   .service__card p {
     font-size: 1.5rem;
     font-weight: 400; }
