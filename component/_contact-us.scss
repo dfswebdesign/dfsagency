@@ -8,9 +8,9 @@
   padding: 10rem 2rem;
   height: 55rem;
   background: linear-gradient(
-      to bottom,
+      to right,
       rgba($color-black, 0.7),
-      rgba($color-black, 0.5)
+      rgba($color-black, 0)
     ),
     url(../images/background-3.jpg);
   background-size: cover;
@@ -18,24 +18,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // clip-path: polygon(
-  //   50% 0%,
-  //   100% 0,
-  //   100% 35%,
-  //   100% 70%,
-  //   100% 100%,
-  //   50% 93%,
-  //   0 100%,
-  //   0% 70%,
-  //   0% 35%,
-  //   0 0
-  // );
+  clip-path: polygon(
+    50% 0%,
+    100% 0,
+    100% 35%,
+    100% 70%,
+    100% 100%,
+    50% 93%,
+    0 100%,
+    0% 70%,
+    0% 35%,
+    0 0
+  );
 
   &__text {
     color: white;
     text-align: center;
 
     &--title {
+      padding: 5rem 0 0;
       font-size: 4.5rem;
       letter-spacing: 0.2rem;
       font-weight: 400;
