@@ -51,14 +51,14 @@
   display: inline-block;
   padding: 1rem 3rem;
   cursor: pointer;
+  font-size: 1.6rem;
   background: #ff5925;
   color: #fff;
   border: none;
   border-radius: 1rem;
   position: relative;
-  transition: all;
-  overflow: hidden;
-  border-bottom: 2px solid #06aaac; }
+  transition: all 2s;
+  overflow: hidden; }
   .btn:before {
     content: "";
     position: absolute;
@@ -707,6 +707,13 @@ label {
     grid-template-columns: 1fr;
     gap: 5rem;
     overflow: visible; }
+  .services .grid-3 {
+    grid-template-columns: 1fr;
+    overflow: visible; }
+  .grid-2 {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+    overflow: visible; }
   .service {
     padding-left: 2rem; }
     .service li {
@@ -809,6 +816,11 @@ body {
   max-width: 120rem;
   margin: 0 auto;
   overflow: auto;
+  padding: 0 2rem; }
+
+.feature__container {
+  max-width: 155rem;
+  margin: 0 auto;
   padding: 0 2rem; }
 
 .ul {
@@ -934,7 +946,9 @@ img {
   padding: 5rem 35px;
   background-color: #008b8b;
   background: #06aaac;
-  position: relative; }
+  position: relative;
+  box-shadow: 1px 1px 0 1px #f9f9fb, -1px 0 28px 0 rgba(34, 33, 81, 0.01), 28px 28px 28px 0 rgba(34, 33, 81, 0.25);
+  transition: 0.4s ease-in-out transform, 0.4s ease-in-out box-shadow; }
   .service-details img {
     width: 8rem;
     height: auto; }
@@ -980,7 +994,7 @@ img {
     transition: 0.4s ease-in-out transform, 0.4s ease-in-out box-shadow; }
     .portfolio .portfolio__img:hover {
       transform: translate3d(0px, -60px, 0px) rotateX(51deg) rotateZ(43deg);
-      box-shadow: 1px 1px 0 1px #f9f9fb, -1px 0 28px 0 rgba(34, 33, 81, 0.01), 54px 54px 28px -10px rgba(34, 33, 81, 0.15); }
+      box-shadow: 1px 1px 0 1px #f9f9fb, -1px 0 60px 0 rgba(34, 33, 81, 0.01), 54px 54px 28px -10px rgba(34, 33, 81, 0.15); }
 
 .portfolio__rightside p {
   font-weight: 400;
@@ -1026,6 +1040,16 @@ img {
 
 .gallery-img:nth-child(4n + 4) {
   flex-basis: 38rem; }
+
+.call-to-action {
+  padding: 0 3rem; }
+
+.right-side__contact img {
+  width: 100%;
+  box-shadow: 1px 1px 0 1px #f9f9fb, -1px 0 28px 0 rgba(34, 33, 81, 0.01), 28px 28px 28px 0 rgba(226, 104, 22, 0.25); }
+
+.left-side__contact {
+  padding: 0 2rem; }
 
 footer {
   padding: 3rem;

@@ -303,6 +303,18 @@
     overflow: visible;
   }
 
+  .services .grid-3 {
+    grid-template-columns: 1fr;
+    // gap: 5rem;
+    overflow: visible;
+  }
+
+  .grid-2 {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+    overflow: visible;
+  }
+
   .service {
     padding-left: 2rem;
 

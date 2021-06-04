@@ -10,6 +10,9 @@
   background-color: $color-secondary-dark;
   background: $color-secondary;
   position: relative;
+  box-shadow: 1px 1px 0 1px #f9f9fb, -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+    28px 28px 28px 0 rgba(34, 33, 81, 0.25);
+  transition: 0.4s ease-in-out transform, 0.4s ease-in-out box-shadow;
 
   img {
     width: 8rem;
@@ -29,10 +32,10 @@
   transition: transform 0.3s ease-in-out;
   outline-offset: 0.9rem;
 
-  &:hover {
-    // transform: translateY(-0.5rem) scale(1.03);
-    // outline: 0.5rem solid $color-primary;
-  }
+  // &:hover {
+  //   // transform: translateY(-0.5rem) scale(1.03);
+  //   // outline: 0.5rem solid $color-primary;
+  // }
 
   p {
     font-size: $default-font-size;
