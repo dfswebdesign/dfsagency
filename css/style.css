@@ -256,7 +256,7 @@ label {
 .showcase-contact {
   padding: 10rem 2rem;
   height: 55rem;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(../images/background-3.jpg);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url(../images/background-image-4.png);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -708,35 +708,34 @@ label {
   .grid,
   .showcase .grid {
     grid-template-columns: 1fr; }
-  .showcase {
+  .showcase,
+  .showcase-web-design,
+  .showcase-contact,
+  .showcase-search-engine {
     padding-top: 30rem 0.5rem;
     height: auto; }
-    .showcase__form {
-      top: 5rem;
-      height: auto;
-      width: 100%;
-      padding: 4rem;
-      z-index: 100;
-      margin-top: -15rem; }
-    .showcase__text {
-      margin-top: 10rem; }
-      .showcase__text--title {
-        font-size: 3.5rem; }
-      .showcase__text--subtitle {
-        font-size: 1.6rem; }
-  .showcase-web-design {
-    padding-top: 30rem 0.5rem;
-    height: auto; }
-    .showcase-web-design__form {
+    .showcase__form,
+    .showcase-web-design__form,
+    .showcase-contact__form,
+    .showcase-search-engine__form {
       height: auto;
       width: 100%;
       z-index: 100;
       margin-top: -15rem; }
-    .showcase-web-design__text {
+    .showcase__text,
+    .showcase-web-design__text,
+    .showcase-contact__text,
+    .showcase-search-engine__text {
       margin-top: 10rem; }
-      .showcase-web-design__text--title {
+      .showcase__text--title,
+      .showcase-web-design__text--title,
+      .showcase-contact__text--title,
+      .showcase-search-engine__text--title {
         font-size: 3.5rem; }
-      .showcase-web-design__text--subtitle {
+      .showcase__text--subtitle,
+      .showcase-web-design__text--subtitle,
+      .showcase-contact__text--subtitle,
+      .showcase-search-engine__text--subtitle {
         font-size: 1.6rem; } }
 
 @media screen and (max-width: 1485px) {
