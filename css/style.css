@@ -690,13 +690,15 @@ image img {
   .showcase,
   .showcase-web-design,
   .showcase-contact,
-  .showcase-search-engine {
+  .showcase-search-engine,
+  .showcase-ecommerce {
     padding-top: 30rem 0.5rem;
     height: auto; }
     .showcase__form,
     .showcase-web-design__form,
     .showcase-contact__form,
-    .showcase-search-engine__form {
+    .showcase-search-engine__form,
+    .showcase-ecommerce__form {
       height: auto;
       width: 100%;
       z-index: 100;
@@ -704,17 +706,20 @@ image img {
     .showcase__text,
     .showcase-web-design__text,
     .showcase-contact__text,
-    .showcase-search-engine__text {
+    .showcase-search-engine__text,
+    .showcase-ecommerce__text {
       margin-top: 10rem; }
       .showcase__text--title,
       .showcase-web-design__text--title,
       .showcase-contact__text--title,
-      .showcase-search-engine__text--title {
+      .showcase-search-engine__text--title,
+      .showcase-ecommerce__text--title {
         font-size: 3.5rem; }
       .showcase__text--subtitle,
       .showcase-web-design__text--subtitle,
       .showcase-contact__text--subtitle,
-      .showcase-search-engine__text--subtitle {
+      .showcase-search-engine__text--subtitle,
+      .showcase-ecommerce__text--subtitle {
         font-size: 1.6rem; } }
 
 @media screen and (max-width: 1485px) {
