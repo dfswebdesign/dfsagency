@@ -90,7 +90,7 @@
 .contact-form .row textarea {
   position: relative;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  color: #111;
+  color: $color-black;
   background-color: transparent;
   width: 100%;
   padding: 1rem;
@@ -114,6 +114,7 @@
   font-weight: 400;
   border: 0;
   cursor: pointer;
+  border-radius: 1rem;
 }
 
 // .info-box img {
@@ -140,11 +141,15 @@
 }
 
 .contact-info .info-box .details h4 {
-  color: #333;
+  color: $color-grey-text-dark;
   font-size: 1.6rem;
 }
 
 .contact-info .info-box .details p,
 .contact-info .info-box .details a {
-  color: #111;
+  color: $color-black;
+}
+
+input {
+  color: $color-grey-text-dark;
 }

@@ -25,6 +25,7 @@
   }
 
   .portfolio__img {
+    // max-width: 80%;
     transform: rotateX(51deg) rotateZ(43deg);
     transform-style: preserve-3d;
     border-radius: 32px;
@@ -41,9 +42,10 @@
 }
 
 .portfolio__rightside {
+  padding: 0 1rem;
   p {
     font-weight: 400;
-    font-size: $default-font-size;
+    font-size: 1.6rem;
     // padding-right: 5rem;
   }
 }
