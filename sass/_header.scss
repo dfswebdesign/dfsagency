@@ -61,13 +61,12 @@
       }
 
       a:after {
-        // background: rgba(236, 183, 8, 0.2);
         content: "";
         position: absolute;
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 2px;
+        height: 0.2rem;
         background-color: $color-white;
         transform: scaleX(0);
         transition: all 0.5s;
@@ -87,7 +86,7 @@
 
   .menu-icon {
     position: relative;
-    padding: 26px 10px;
+    padding: 2.6rem 1rem;
     cursor: pointer;
     z-index: 1;
     display: none;
@@ -95,9 +94,9 @@
     &__line {
       display: block;
       position: relative;
-      background: #000;
-      height: 2px;
-      width: 20px;
+      background: $color-black;
+      height: 0.2rem;
+      width: 2rem;
       border-radius: 4px;
       transition: background 0.8s ease;
 
@@ -107,41 +106,41 @@
         position: absolute;
         height: 100%;
         width: 100%;
-        border-radius: 4px;
-        background: #000;
+        border-radius: 0.4rem;
+        background: $color-black;
         transition: background 0.8s ease;
       }
 
       &::before {
-        transform: translateY(-5px);
+        transform: translateY(-0.5rem);
       }
 
       &::after {
-        transform: translateY(5px);
+        transform: translateY(0.5rem);
       }
     }
   }
 
   .menu-btn {
     position: absolute;
-    top: -100px;
+    top: -10rem;
 
     &:focus ~ .menu-icon {
       .menu-icon__line {
         ::before {
-          transform: translateY(-7px);
+          transform: translateY(-0.7rem);
         }
         ::after {
-          transform: translateY(7px);
+          transform: translateY(0.7rem);
         }
       }
     }
   }
 
   &.scrolled {
-    height: 110px;
-    background: #333;
-    color: #fff;
+    height: 11rem;
+    background: $color-grey-text-dark;
+    color: $color-white;
     opacity: 0.7;
     -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.56);
     box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.56);

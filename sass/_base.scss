@@ -30,7 +30,7 @@ body {
 .feature__container {
   max-width: 120rem;
   margin: 0 auto;
-  padding: 0 8rem;
+  padding: 0 1rem;
 }
 
 .ul {
@@ -165,4 +165,9 @@ img {
 //Font - Text Align
 .t-align {
   text-align: center;
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
 }
