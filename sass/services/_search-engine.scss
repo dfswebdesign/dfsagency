@@ -1,8 +1,9 @@
-.web-design-container {
-  max-width: 135rem;
-  margin: 0 auto;
-  padding: 0 2.5rem;
-}
+// .web-design-container {
+//   max-width: 135rem;
+//   margin: 0 auto;
+//   padding: 0 2.5rem;
+// }
+
 .showcase-search-engine {
   padding: 10rem 2rem;
   height: 60rem;
@@ -29,9 +30,6 @@
     0% 35%,
     0 0
   );
-
-  //   position: relative;
-  // z-index: -5;
 
   &__text {
     color: white;
@@ -60,6 +58,7 @@
 
 .left-main {
   padding: 0 3rem;
+
   p {
     font-weight: 400;
     font-size: 1.6rem;

@@ -46,6 +46,16 @@ i {
   }
 }
 
+.footer__list-item a {
+  li {
+    color: $color-grey-text-light;
+  }
+}
+
+.footer__list-item a:hover {
+  color: #111;
+}
+
 .email {
   margin-top: 2rem;
 }
@@ -60,15 +70,42 @@ i {
   display: flex;
   padding-bottom: 5rem;
   margin-left: 3rem;
+  transition: transform 0.3s ease-in;
 
-  i {
-    font-size: 3rem;
-    transition: all 0.3s ease-in;
-    cursor: pointer;
+  .instagram:hover {
+    color: #e94a59;
+    transform: scale(1.6);
+    border-radius: 0.6rem;
+    background-color: $color-white;
+    padding: 0.2rem 0.2rem;
   }
 
-  i:hover {
-    color: $color-secondary;
+  .linkedin:hover {
+    color: #0e72a8;
     transform: scale(1.6);
+    background-color: $color-white;
+    border-radius: 0.6rem;
+    padding: 0.2rem 0.2rem;
+  }
+
+  .youtube:hover {
+    color: #ff0000;
+    transform: scale(1.6);
+    background-color: $color-white;
+    border-radius: 0.6rem;
+    padding: 0.2rem 0.2rem;
+  }
+}
+
+.footer__icons {
+  text-align: center;
+
+  img {
+    width: 2.8rem;
+    margin-left: 1rem;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }

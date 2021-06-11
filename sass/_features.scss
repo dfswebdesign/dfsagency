@@ -44,6 +44,7 @@
 
 .portfolio__rightside {
   padding: 0 1rem;
+
   p {
     font-weight: 400;
     font-size: 1.6rem;
@@ -95,12 +96,15 @@
 .gallery-img:nth-child(4n + 1) {
   flex-basis: 25rem;
 }
+
 .gallery-img:nth-child(4n + 2) {
   flex-basis: 32.5rem;
 }
+
 .gallery-img:nth-child(4n + 3) {
   flex-basis: 18rem;
 }
+
 .gallery-img:nth-child(4n + 4) {
   flex-basis: 38rem;
 }
