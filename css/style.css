@@ -577,7 +577,7 @@ li {
     box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.45); }
 
 .maintenance-plans {
-  height: 40rem;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1131,13 +1131,13 @@ body {
   max-width: 120rem;
   margin: 0 auto;
   overflow: auto;
-  padding: 0 2rem; }
+  padding: 0 1rem; }
 
 .container-plans {
   max-width: 160rem;
   margin: 0 auto;
   overflow: auto;
-  padding: 0 2rem; }
+  padding: 0 3rem; }
 
 .feature__container {
   max-width: 120rem;
