@@ -1,10 +1,10 @@
-.cta {
+.plans {
   background: linear-gradient(
-      to right,
-      rgba($color-secondary, 0.9),
-      rgba($color-secondary-dark, 1)
+      to bottom,
+      rgba($color-black, 0.9),
+      rgba($color-black, 0.8)
     ),
-    url(../images/website-5552822_1920.png) no-repeat center;
+    url(../images/website-5582511_1920.png) no-repeat center;
   color: $color-white;
   padding: 10rem 1rem;
   position: relative;
@@ -24,8 +24,8 @@
 }
 
 //Skewed background for cta
-.cta::before,
-.cta::after {
+.plans::before,
+.plans::after {
   content: "";
   position: absolute;
   height: 10rem;
@@ -37,4 +37,19 @@
   -webkit-transform: skewY(-3deg);
   -moz-transform: skewY(-3deg);
   -ms-transform: skewY(-3deg);
+}
+
+.maintenance-plans {
+  p,
+  h2 {
+    color: $color-white;
+    font-weight: 300;
+    letter-spacing: 0.3rem;
+  }
+
+  .btn {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+  }
 }

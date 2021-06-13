@@ -1,0 +1,94 @@
+.maintenance-plans {
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.showcase-maintenance {
+  padding: 10rem 2rem;
+  overflow: visible;
+  height: 65rem;
+  background: linear-gradient(
+      to bottom,
+      rgba($color-black, 0.9),
+      rgba($color-black, 0.4)
+    ),
+    url(../images/website-maintenance-4.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  // position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(
+    50% 0%,
+    100% 0,
+    100% 35%,
+    100% 70%,
+    100% 100%,
+    50% 93%,
+    0 100%,
+    0% 70%,
+    0% 35%,
+    0 0
+  );
+
+  &__text {
+    color: white;
+    text-align: center;
+
+    &--title {
+      font-size: 4.5rem;
+      letter-spacing: 0.2rem;
+      font-weight: 400;
+    }
+
+    &--subtitle {
+      font-size: 3.5rem;
+      text-align: center;
+    }
+  }
+
+  &__form {
+    position: relative;
+    top: 5rem;
+    height: 40rem;
+    width: 40rem;
+    padding: 4rem;
+    z-index: 100;
+    justify-self: flex-end;
+  }
+}
+
+.website-plans {
+  background-color: $color-grey-text-dark;
+  color: $color-white;
+  padding: 20rem 0;
+  text-align: center;
+
+  &__images img {
+    width: 90px;
+  }
+
+  p {
+    font-weight: 400;
+  }
+}
+
+.call-to-action .grid-2 {
+  overflow: visible;
+}
+
+.maintenance-description {
+  p {
+    font-weight: 400;
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-weight: 600;
+  }
+}
