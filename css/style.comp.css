@@ -406,7 +406,8 @@ input {
 .maintenance-plans h2 {
   color: #fff;
   font-weight: 300;
-  letter-spacing: 0.3rem; }
+  letter-spacing: 0.3rem;
+  line-height: 1.4; }
 
 .maintenance-plans .btn {
   display: block;
@@ -466,7 +467,7 @@ image img {
 .showcase-search-engine {
   padding: 10rem 2rem;
   height: 60rem;
-  background: linear-gradient(to bottom, rgba(17, 17, 17, 0.9), rgba(17, 17, 17, 0.4)), url(../images/2380.jpg);
+  background: linear-gradient(to bottom, rgba(17, 17, 17, 0.9), rgba(17, 17, 17, 0.4)), url(../images/seo-1.jpeg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -536,7 +537,7 @@ image img {
 .showcase-app-development {
   padding: 10rem 2rem;
   height: 60rem;
-  background: linear-gradient(to bottom, rgba(17, 17, 17, 0.9), rgba(17, 17, 17, 0.4)), url(../images/app-dev-image.jpg);
+  background: linear-gradient(to bottom, rgba(17, 17, 17, 0.9), rgba(17, 17, 17, 0.4)), url(../images/app-4.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -577,7 +578,7 @@ li {
     box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.45); }
 
 .maintenance-plans {
-  height: 40rem;
+  height: 30rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -604,7 +605,8 @@ li {
       font-weight: 400; }
     .showcase-maintenance__text--subtitle {
       font-size: 3.5rem;
-      text-align: center; }
+      text-align: center;
+      line-height: 1.6; }
   .showcase-maintenance__form {
     position: relative;
     top: 5rem;
@@ -632,7 +634,7 @@ li {
   font-size: 1.6rem; }
 
 .maintenance-description h2 {
-  font-weight: 600; }
+  font-weight: 400; }
 
 .showcase {
   padding: 10rem 2rem;
@@ -1020,6 +1022,9 @@ li {
     font-size: 1.5rem; }
     li p {
       font-size: 1.8rem; }
+  .maintenance-plans {
+    height: 60rem;
+    line-height: 1.2; }
   .app-image {
     width: 100%;
     margin: 0 auto; }
@@ -1131,13 +1136,13 @@ body {
   max-width: 120rem;
   margin: 0 auto;
   overflow: auto;
-  padding: 0 2rem; }
+  padding: 0 1rem; }
 
 .container-plans {
   max-width: 160rem;
   margin: 0 auto;
   overflow: auto;
-  padding: 0 2rem; }
+  padding: 0 3rem; }
 
 .feature__container {
   max-width: 120rem;
@@ -1360,6 +1365,35 @@ img {
 
 .gallery-img:nth-child(4n + 4) {
   flex-basis: 38rem; }
+
+.web-design-container {
+  max-width: 135rem;
+  margin: 0 auto;
+  padding: 0 2.5rem; }
+
+.showcase-ebook {
+  padding: 10rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.left-main {
+  padding: 0 3rem; }
+  .left-main p {
+    font-weight: 400;
+    font-size: 1.6rem; }
+
+.right-col p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.6rem; }
+
+.banner__fiverr img, .banner__hostgator img {
+  width: 100%;
+  height: auto; }
+
+image img {
+  width: 50%; }
 
 .call-to-action {
   padding: 0 3rem; }
