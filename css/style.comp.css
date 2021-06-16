@@ -439,18 +439,13 @@ input {
     .showcase-web-design__text--subtitle {
       font-size: 3.5rem;
       text-align: center; }
-  .showcase-web-design__form {
-    height: 40rem;
-    width: 40rem;
-    padding: 4rem;
-    z-index: 100;
-    justify-self: flex-end; }
 
 .left-main {
   padding: 0 3rem; }
   .left-main p {
     font-weight: 400;
-    font-size: 1.6rem; }
+    font-size: 1.6rem;
+    text-align: justify; }
 
 .right-col p {
   text-align: center;
@@ -563,7 +558,7 @@ li {
 
 .zoom-setup__container {
   background-color: #f6f6f6;
-  padding: 2rem 3rem; }
+  padding: 2rem 2rem; }
 
 .app-image {
   width: 75%;
@@ -624,14 +619,16 @@ li {
   .website-plans__images img {
     width: 90px; }
   .website-plans p {
-    font-weight: 400; }
+    font-weight: 400;
+    text-align: justify; }
 
 .call-to-action .grid-2 {
   overflow: visible; }
 
 .maintenance-description p {
   font-weight: 400;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  text-align: justify; }
 
 .maintenance-description h2 {
   font-weight: 400; }
@@ -1384,16 +1381,36 @@ img {
     font-size: 1.6rem; }
 
 .right-col p {
-  text-align: center;
+  text-align: justify;
   font-weight: 400;
   font-size: 1.6rem; }
+
+.image img {
+  width: 85%;
+  margin: 0 auto;
+  display: block; }
 
 .banner__fiverr img, .banner__hostgator img {
   width: 100%;
   height: auto; }
 
 image img {
-  width: 50%; }
+  width: 100%; }
+
+.signup-form {
+  background-color: #06aaac !important;
+  clear: left !important;
+  font-size: 1.4rem !important;
+  padding: 1rem 1rem !important;
+  border: 1px solid #008b8b;
+  border-radius: 5px; }
+
+.form-heading h2 {
+  color: #fff;
+  font-size: 2.5rem !important; }
+
+.form-heading span {
+  color: red !important; }
 
 .call-to-action {
   padding: 0 3rem; }

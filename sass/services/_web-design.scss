@@ -47,13 +47,13 @@
     }
   }
 
-  &__form {
-    height: 40rem;
-    width: 40rem;
-    padding: 4rem;
-    z-index: 100;
-    justify-self: flex-end;
-  }
+  // &__form {
+  //   height: 40rem;
+  //   width: 40rem;
+  //   padding: 4rem;
+  //   z-index: 100;
+  //   justify-self: flex-end;
+  // }
 }
 
 .left-main {
@@ -61,6 +61,7 @@
   p {
     font-weight: 400;
     font-size: 1.6rem;
+    text-align: justify;
   }
 
   // img {

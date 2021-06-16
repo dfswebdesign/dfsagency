@@ -6,15 +6,6 @@
 
 .showcase-ebook {
   padding: 10rem 2rem;
-  //   height: 60rem;
-  //   background: linear-gradient(
-  //       to bottom,
-  //       rgba($color-black, 0.9),
-  //       rgba($color-black, 0.4)
-  //     ),
-  //     url(../images/productivity-1995786_1920.jpg);
-  //   background-size: cover;
-  //   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,10 +21,17 @@
 
 .right-col {
   p {
-    text-align: center;
+    text-align: justify;
     font-weight: 400;
     font-size: 1.6rem;
+    // padding: 0 1rem;
   }
+}
+
+.image img {
+  width: 85%;
+  margin: 0 auto;
+  display: block;
 }
 
 .banner {
@@ -47,5 +45,25 @@
 }
 
 image img {
-  width: 50%;
+  width: 100%;
+}
+
+.signup-form {
+  background-color: $color-secondary !important;
+  clear: left !important;
+  font-size: 1.4rem !important;
+  padding: 1rem 1rem !important;
+  border: 1px solid $color-secondary-dark;
+  border-radius: 5px;
+}
+
+.form-heading {
+  h2 {
+    color: $color-white;
+    font-size: 2.5rem !important;
+  }
+
+  span {
+    color: red !important;
+  }
 }
