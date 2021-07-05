@@ -109,28 +109,27 @@
   <div id="fb-root"></div>
 
   <!-- Your Chat Plugin code -->
-  <div id="fb-customer-chat" class="fb-customerchat"></div>
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
 
   <script>
-    var chatbox = document.getElementById( "fb-customer-chat" );
-    chatbox.setAttribute( "page_id", "111482834456103" );
-    chatbox.setAttribute( "attribution", "page_inbox" );
-    window.fbAsyncInit = function () {
-      FB.init( {
-        xfbml: true,
-        version: "v10.0",
-      } );
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "106951808292382");
+    chatbox.setAttribute("attribution", "biz_inbox");
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v11.0'
+      });
     };
 
-    ( function ( d, s, id ) {
-      var js,
-        fjs = d.getElementsByTagName( s )[ 0 ];
-      if ( d.getElementById( id ) ) return;
-      js = d.createElement( s );
-      js.id = id;
-      js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-      fjs.parentNode.insertBefore( js, fjs );
-    } )( document, "script", "facebook-jssdk" );
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
   </script>
   <!-- End of Fb Chat Script -->
 
@@ -502,7 +501,7 @@
         <div class="footer__social">
           <div class="footer__icons">
             <p>Follow us on social media</p>
-            <a href="https://www.facebook.com/Web-Design-Agency-111482834456103" target="_blank"><img
+            <a href="https://www.facebook.com/dfswebagency" target="_blank"><img
                 src="images/facebook.png" alt=""></i></a>
 
             <a href="https://www.instagram.com/dfsagency/"><img src="images/instagram.png" alt=""></a>

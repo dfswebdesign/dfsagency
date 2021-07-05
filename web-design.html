@@ -111,28 +111,27 @@
   <div id="fb-root"></div>
 
   <!-- Your Chat Plugin code -->
-  <div id="fb-customer-chat" class="fb-customerchat"></div>
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
 
   <script>
-    var chatbox = document.getElementById( "fb-customer-chat" );
-    chatbox.setAttribute( "page_id", "111482834456103" );
-    chatbox.setAttribute( "attribution", "page_inbox" );
-    window.fbAsyncInit = function () {
-      FB.init( {
-        xfbml: true,
-        version: "v10.0",
-      } );
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "106951808292382");
+    chatbox.setAttribute("attribution", "biz_inbox");
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v11.0'
+      });
     };
 
-    ( function ( d, s, id ) {
-      var js,
-        fjs = d.getElementsByTagName( s )[ 0 ];
-      if ( d.getElementById( id ) ) return;
-      js = d.createElement( s );
-      js.id = id;
-      js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-      fjs.parentNode.insertBefore( js, fjs );
-    } )( document, "script", "facebook-jssdk" );
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
   </script>
   <!-- End of Fb Chat Script -->
 
@@ -195,25 +194,38 @@
           <h1 class="headings__text--title t-align"> <span class="bold">&#8212 Amazing </span>Web Design
             &#8212</h1>
           <h2>
-            Your website is your brand's identity online, and you need to ensure that you're representing
-            yourself correctly.
+            Your website is your brand's identity online, and you need to ensure that you're representing yourself correctly.
           </h2>
         </div>
         <p class="m-top-3">
-          <strong>Digital Footprint Solutions, Inc.</strong> is a proven leader in designing
-          and developing some of the very best responsive websites for our clients. Streamlined, user-friendly, and up
-          to date with the latest industry best practices, our responsive design websites ensure that
-          your business is displayed the right way on any device.
+          <strong>Digital Footprint Solutions, Inc.</strong> is a proven leader in designing and developing some of the very best responsive websites for our clients. Streamlined, user-friendly, and up to date with the latest industry best practices, our responsive design websites ensure that your business is displayed the right way on all devices.          
         </p>
 
         <p class="bold">
-          <strong>Our expert team of Website Developers & Digital Strategists use
-            cutting edge technology & best practices to create custom sites that
-            increases user engagement.</strong>
+          <strong>You will be in good hands with our expert team of Website Developers & Digital Marketers.  Only
+            cutting edge technology & best practices will be used to create your custom site that
+            increases your website customers' engagement.</strong>  
         </p>
 
+        <div class="web-design-benefits m-top-3">
+          <h2 class="t-align">Benefits & Goals For Your Business</h2>
+          <ul class=" flex-container m-top-5">
+            <img src="images/checked.png" alt=""><li>Increase website traffic, hence more sales for your business.</li>           
+          </ul>
+          <ul class=" flex-container m-top-5">
+            <img src="images/checked.png" alt=""><li>Provide Digital Presence for your business</li>           
+          </ul>
+          <ul class=" flex-container m-top-5">
+            <img src="images/checked.png" alt=""><li>Improve your professional image, so your customers knows exactly who you are and what your business is about.</li>           
+          </ul>
+          <ul class=" flex-container m-top-5">
+            <img src="images/checked.png" alt=""><li>Your customers will be more informed with your contact information.</li>           
+          </ul>
+        </div>
+
+
         <div class="image m-top-3">
-          <img src="/images/Dancing-Bear-Lodge-Responsive-Web-Design.jpg" alt="">
+          <img src="/images/Dancing-Bear-Lodge-Responsive-Web-Design-1-min.jpg" alt="">
         </div>
 
         <h2 class="m-top-3">What Is Responsive Web Design?</h2>
@@ -239,10 +251,10 @@
 
         <h2 class="m-top-3">Our Responsive Web Design Services</h2>
 
-        <p>We design, develop, and deploy beautiful, functional web presences that help our clients reach their goals,
-          and we can do the same for you. Couple that with conversion rate optimization, and you’ll have a site that not
-          only looks great, but also increases leads and sales.</p>
+        <p>We design, develop, and deploy beautiful, functional web presence that helps you reach your business goals. Couple that with conversion rate optimization, you’ll have a site that not only looks great, but will also increase leads and sales.</p>          
       </div>
+
+      
 
       <!-- RIGHT SIDE COLUMN -->
 
@@ -304,7 +316,7 @@
   <section class="cta p-top-2 m-bottom-6 m-top-3" id="cta">
 
     <div class="container t-align">
-      <h2>&#8212 Ready To Get Started & Generate More Leads For Your Business? &#8212;</h2>
+      <h2><strong>Blow away your competition with an amazing website!</strong></h2> 
 
       <h3>
         Call Us Today: <strong>954-361-5215 or Toll Free 1-800-839-7549</strong>
@@ -448,7 +460,7 @@
         <div class="footer__social">
           <div class="footer__icons">
             <p>Follow us on social media</p>
-            <a href="https://www.facebook.com/Web-Design-Agency-111482834456103" target="_blank"><img
+            <a href="https://www.facebook.com/dfswebagency" target="_blank"><img
                 src="images/facebook.png" alt=""></i></a>
 
             <a href="https://www.instagram.com/dfsagency/"><img src="images/instagram.png" alt=""></a>

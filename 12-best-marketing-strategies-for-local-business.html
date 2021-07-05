@@ -110,34 +110,33 @@
 </head>
 
 <body>
+
     <!-- Messenger Chat Plugin Code -->
     <div id="fb-root"></div>
 
     <!-- Your Chat Plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat"></div>
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
 
     <script>
-        var chatbox = document.getElementById( "fb-customer-chat" );
-        chatbox.setAttribute( "page_id", "111482834456103" );
-        chatbox.setAttribute( "attribution", "page_inbox" );
-        window.fbAsyncInit = function () {
-            FB.init( {
-                xfbml: true,
-                version: "v10.0",
-            } );
-        };
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "106951808292382");
+      chatbox.setAttribute("attribution", "biz_inbox");
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v11.0'
+        });
+      };
 
-        ( function ( d, s, id ) {
-            var js,
-                fjs = d.getElementsByTagName( s )[ 0 ];
-            if ( d.getElementById( id ) ) return;
-            js = d.createElement( s );
-            js.id = id;
-            js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-            fjs.parentNode.insertBefore( js, fjs );
-        } )( document, "script", "facebook-jssdk" );
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
     </script>
-    <!-- End of Fb Chat Script -->
 
     <header class="main-header">
         <div class="logo">
@@ -150,40 +149,48 @@
 
     <section class="main showcase-ebook">
         <div class="web-design-container grid-col">
-
             <!-- LEFT SIDE COLUMN -->
-
             <div class="left-main m-top-3">
                 <div>
-                    <h1 class="headings__text--title t-align">12 Best Strategies For Your Local Business</h1>
+                    <h1 class="headings__text--title t-align ebook-title">12 Best Strategies For Your Local Business</h1>
                     <h2 class="t-align">
                         We have 12 proven local marketing ideas and strategies for a small business that you cannot
                         afford to miss.
                     </h2>
                 </div>
 
-                <h3 class="bold t-align m-top-3">
-                    Enter your information in the contact form provided for Instant Download.
+                <h3 class="bold t-align m-top-3 m-bottom-3">
+                    Enter your information in the contact form provided for Instant Download directly to your inbox.
                 </h3>
 
-                <div class="image card">
+                <div class="promo-image m-bottom-3 ">
                     <img src="/images/ebook-cover-3.jpg" alt="">
                 </div>
+
+                <h2>
+                   Learn how you can maximize your Local Business Listing with Google's Free Tool <strong>Google My Business.</strong> 
+                </h2>
+                <p>Google My Business is among the #1 tools that help bring your business to a new audience’s attention.</p>
+
+                <p>More than half of small businesses still haven’t claimed
+                    their Google My Business listing according to one study.
+                    They are missing out on a valuable local marketing
+                    strategy. <strong>On your profile you can include your business
+                        name, phone number, address including zip code,
+                        directions, hours of operation, and a link to your
+                        website.</strong> Savvy small businesses also add content such
+                    as enticing photos. It’s free visibility in the world’s most
+                    powerful search engine. </p>
+
+                    <h2 class="t-align bold">Learn more by downloading our free ebook</h2>
+
             </div>
 
             <!-- RIGHT SIDE COLUMN -->
 
-            <div class="right-col t-align m-top-3" id="free-consult">
-                <h2>Grab Your Ebook Today</h2>
-                <p>
-                    An enormous 85% of business owners depend on word-of-mouth referrals, showing just how crucial it is
-                    to reach
-                    customers in your local area. Local marketing strategies
-                    are slightly different compared with the techniques and methods you’ll use for general marketing, as
-                    you will be
-                    working hard to find, reach, engage and appeal to local people specifically.
-                </p>
-
+            <div class="right-col t-align m-top-3">
+               
+                
                 <!-- Mailchimp -->
                 <!-- Begin Mailchimp Signup Form -->
                 <div class="signup-form" id="mc_embed_signup">
@@ -298,7 +305,7 @@
                 <div class="footer__social">
                     <div class="footer__icons">
                         <p>Follow us on social media</p>
-                        <a href="https://www.facebook.com/Web-Design-Agency-111482834456103" target="_blank"><img
+                        <a href="https://www.facebook.com/dfswebagency" target="_blank"><img
                                 src="images/facebook.png" alt=""></i></a>
 
                         <a href="https://www.instagram.com/dfsagency/"><img src="images/instagram.png" alt=""></a>

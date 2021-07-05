@@ -12,7 +12,7 @@
 }
 
 .left-main {
-  padding: 0 3rem;
+  padding: 0 1rem;
   p {
     font-weight: 400;
     font-size: 1.6rem;
@@ -28,8 +28,12 @@
   }
 }
 
-.image img {
-  width: 85%;
+.ebook-title {
+  font-weight: 700;
+}
+
+.promo-image img {
+  width: 35rem;
   margin: 0 auto;
   display: block;
 }
